@@ -1,3 +1,4 @@
+import { AddModule } from './add/add.module';
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -6,7 +7,7 @@ import { DivideModule } from './divide/divide.module';
 import { MultiplyModule } from './multiply/multiply.module';
 
 @Module({
-  imports: [SubstractModule, DivideModule, MultiplyModule],
+  imports: [AddModule, SubstractModule, DivideModule, MultiplyModule],
   controllers: [AppController],
   providers: [AppService],
 })
